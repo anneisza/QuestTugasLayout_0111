@@ -15,7 +15,8 @@
 
     <color name="font_black">#000000</color>
     <color name="font_putih_pink">#FCEBEB</color>
-    <color name="font_pink_abu">#DBBABA</color>
-    <color name="font_abu">#736D6D</color>
+    <color name="font_kuning">#F2BE02</color>
+    <color name="font_ungu">#C22B5F</color>
+    <color name="font_ungu_biru">#9F2BC2</color>
 
 </resources>

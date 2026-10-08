@@ -34,7 +34,7 @@ fun CardLayoutReUsable(
     alamat: String,
     warnaCard: Color,
     warnaNama: Color,
-    warnaNoTelp: Color,
+    warnaNoTelp: Color?,
     warnaAlamat: Color,
     fontNama: FontFamily?
 ){
@@ -58,7 +58,7 @@ fun CardLayoutReUsable(
             ) {
                 Text(
                     nama,
-                    fontSize = 30.sp,
+                    fontSize = 16.sp,
                     fontFamily = fontNama,
                     fontWeight = FontWeight.Bold,
                     color = warnaNama
@@ -66,8 +66,7 @@ fun CardLayoutReUsable(
                 if (noTelp != null){
                     Text(
                         noTelp,
-                        fontSize = 14.sp,
-                        color = warnaNoTelp
+                        fontSize = 14.sp
                     )
                 }
                 Text(
@@ -109,9 +108,9 @@ fun AktivitasPertama(modifier: Modifier){
             alamat = stringResource(R.string.alamat),
             warnaCard = colorResource(R.color.maroon_tua),
             warnaNama = colorResource(R.color.font_putih_pink),
-            warnaNoTelp = colorResource(R.color.font_abu),
-            warnaAlamat = colorResource(R.color.font_pink_abu),
-            fontNama = FontFamily.Cursive
+            warnaNoTelp = null,
+            warnaAlamat = colorResource(R.color.font_ungu_biru),
+            fontNama = FontFamily.SansSerif
         )
         CardLayoutReUsable(
             nama = stringResource(R.string.nama2),
@@ -119,9 +118,9 @@ fun AktivitasPertama(modifier: Modifier){
             alamat = stringResource(R.string.alamat2),
             warnaCard = colorResource(R.color.maroon),
             warnaNama = colorResource(R.color.font_putih_pink),
-            warnaNoTelp = colorResource(R.color.font_abu),
-            warnaAlamat = colorResource(R.color.font_pink_abu),
-            fontNama = FontFamily.Serif
+            warnaNoTelp = colorResource(R.color.font_kuning),
+            warnaAlamat = colorResource(R.color.font_ungu),
+            fontNama = FontFamily.Monospace
         )
         CardLayoutReUsable(
             nama = stringResource(R.string.nama3),
@@ -129,18 +128,18 @@ fun AktivitasPertama(modifier: Modifier){
             alamat = stringResource(R.string.alamat3),
             warnaCard = colorResource(R.color.violet),
             warnaNama = colorResource(R.color.font_putih_pink),
-            warnaNoTelp = colorResource(R.color.font_abu),
-            warnaAlamat = colorResource(R.color.font_pink_abu),
+            warnaNoTelp = colorResource(R.color.font_ungu_biru),
+            warnaAlamat = colorResource(R.color.font_kuning),
             fontNama = FontFamily.Cursive
         )
         CardLayoutReUsable(
-            nama = stringResource(R.string.nama3),
-            noTelp = stringResource(R.string.no_telepon3),
-            alamat = stringResource(R.string.alamat3),
+            nama = stringResource(R.string.nama4),
+            noTelp = stringResource(R.string.no_telepon4),
+            alamat = stringResource(R.string.alamat4),
             warnaCard = colorResource(R.color.pink_orange),
-            warnaNama = colorResource(R.color.font_putih_pink),
-            warnaNoTelp = colorResource(R.color.font_abu),
-            warnaAlamat = colorResource(R.color.font_pink_abu),
+            warnaNama = colorResource(R.color.font_kuning),
+            warnaNoTelp = colorResource(R.color.font_ungu),
+            warnaAlamat = colorResource(R.color.font_putih_pink),
             fontNama = FontFamily.Serif
         )
         Box(modifier = Modifier.fillMaxSize()){
