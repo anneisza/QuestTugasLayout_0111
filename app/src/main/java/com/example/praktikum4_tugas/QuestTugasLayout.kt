@@ -1,9 +1,11 @@
 package com.example.praktikum4_tugas
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -107,11 +109,47 @@ fun AktivitasPertama(modifier: Modifier){
             alamat = stringResource(R.string.alamat),
             warnaCard = colorResource(R.color.maroon_tua),
             warnaNama = colorResource(R.color.font_putih_pink),
+            warnaNoTelp = colorResource(R.color.font_abu),
             warnaAlamat = colorResource(R.color.font_pink_abu),
             fontNama = FontFamily.Cursive
         )
-        CardLayoutReUsable()
-
-
+        CardLayoutReUsable(
+            nama = stringResource(R.string.nama2),
+            noTelp = stringResource(R.string.no_telepon2),
+            alamat = stringResource(R.string.alamat2),
+            warnaCard = colorResource(R.color.maroon),
+            warnaNama = colorResource(R.color.font_putih_pink),
+            warnaNoTelp = colorResource(R.color.font_abu),
+            warnaAlamat = colorResource(R.color.font_pink_abu),
+            fontNama = FontFamily.Serif
+        )
+        CardLayoutReUsable(
+            nama = stringResource(R.string.nama3),
+            noTelp = stringResource(R.string.no_telepon3),
+            alamat = stringResource(R.string.alamat3),
+            warnaCard = colorResource(R.color.violet),
+            warnaNama = colorResource(R.color.font_putih_pink),
+            warnaNoTelp = colorResource(R.color.font_abu),
+            warnaAlamat = colorResource(R.color.font_pink_abu),
+            fontNama = FontFamily.Cursive
+        )
+        CardLayoutReUsable(
+            nama = stringResource(R.string.nama3),
+            noTelp = stringResource(R.string.no_telepon3),
+            alamat = stringResource(R.string.alamat3),
+            warnaCard = colorResource(R.color.pink_orange),
+            warnaNama = colorResource(R.color.font_putih_pink),
+            warnaNoTelp = colorResource(R.color.font_abu),
+            warnaAlamat = colorResource(R.color.font_pink_abu),
+            fontNama = FontFamily.Serif
+        )
+        Box(modifier = Modifier.fillMaxSize()){
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
