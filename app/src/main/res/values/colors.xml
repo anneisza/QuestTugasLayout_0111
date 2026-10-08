@@ -11,5 +11,11 @@
     <color name="maroon_tua">#60241E</color>
     <color name="maroon">#95271D</color>
     <color name="violet">#B34A44</color>
-    <color name="pink_orange">E77B49</color>
+    <color name="pink_orange">#E77B49</color>
+
+    <color name="font_black">#000000</color>
+    <color name="font_putih_pink">#FCEBEB</color>
+    <color name="font_pink_abu">#DBBABA</color>
+    <color name="font_abu">#736D6D</color>
+
 </resources>
