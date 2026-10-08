@@ -3,7 +3,9 @@ package com.example.praktikum4_tugas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.selection.toggleable
@@ -17,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -76,8 +79,39 @@ fun CardLayoutReUsable(
                 contentDescription = null,
                 modifier = Modifier.size(100.dp).padding(all = 5.dp)
             )
-
         }
     }
+}
 
+@Composable
+fun AktivitasPertama(modifier: Modifier){
+    Column(
+        modifier = Modifier.padding(top = 100.dp).fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        Text(
+            stringResource(R.string.prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            stringResource(R.string.univ),
+            fontSize = 22.sp
+        )
+
+        Spacer(modifier = Modifier.height(25.dp))
+
+        CardLayoutReUsable(
+            nama = stringResource(R.string.nama),
+            noTelp = null,
+            alamat = stringResource(R.string.alamat),
+            warnaCard = colorResource(R.color.maroon_tua),
+            warnaNama = colorResource(R.color.font_putih_pink),
+            warnaAlamat = colorResource(R.color.font_pink_abu),
+            fontNama = FontFamily.Cursive
+        )
+        CardLayoutReUsable()
+
+
+    }
 }
